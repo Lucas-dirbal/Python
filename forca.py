@@ -26,8 +26,8 @@ while(not enforcou and not acertou):
     acertou = "_" not in palavraSecreta
     print(letrasAcertadas)
 
-    if acertou :
-        print("você ganhou !")
-    else :
-        print("VocÊ perdeu")
+if acertou :
+    print("você ganhou !")
+else :
+    print("VocÊ perdeu")
 print("Fim de Jogo")
