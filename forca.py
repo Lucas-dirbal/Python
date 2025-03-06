@@ -19,5 +19,9 @@ while(not enforcou and not acertou):
             if(chute.upper() == letra.upper()):
                 letrasAcertadas[index] = letra
             index = index + 1
+    else:
+        erros = erros + 1
+
+    enforcou = erros == 6
     print(letrasAcertadas)
 print("Fim de Jogo")
