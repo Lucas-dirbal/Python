@@ -7,27 +7,27 @@ enforcou = False
 acertou = False
 erros = 0
 
-while(not enforcou and not acertou):
-    
+while not enforcou and not acertou:
     chute = input("Qual a letra? ")
     chute = chute.strip().upper()
 
-    if (chute in palavraSecreta):
+    if chute in palavraSecreta:
         index = 0
-
         for letra in palavraSecreta:
-            if(chute.upper() == letra.upper()):
+            if chute == letra:
                 letrasAcertadas[index] = letra
-            index = index + 1
+            index += 1
     else:
-        erros = erros + 1
+        print(f"Você errou, Total de  erros {erros} !")
+        erros += 1
 
     enforcou = erros == 6
-    acertou = "_" not in palavraSecreta
+    acertou = "_" not in letrasAcertadas
     print(letrasAcertadas)
 
-if acertou :
-    print("você ganhou !")
-else :
-    print("VocÊ perdeu")
+    if acertou:
+        print("Você ganhou!")
+    elif enforcou:
+        print("Você perdeu!")
+
 print("Fim de Jogo")
