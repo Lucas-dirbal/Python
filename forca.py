@@ -5,7 +5,7 @@ print(letrasAcertadas)
 
 enforcou = False
 acertou = False
-erros = 0
+erros = 1
 
 while not enforcou and not acertou:
     chute = input("Qual a letra? ")
