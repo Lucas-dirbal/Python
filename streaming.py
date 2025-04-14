@@ -3,6 +3,7 @@ class Filme:
         self.__nome = nome
         self.ano = ano
         self.duracao = duracao
+        self.imdb = imdb
         self.__likes = 0
 
     @property
