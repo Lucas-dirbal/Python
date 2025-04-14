@@ -17,9 +17,9 @@ class Filme:
     def nome(self):
         return self.__nome
     
-    @property
-    def imdb(self):
-        return self.__imdb
+    @imdb.setter
+    def imdb(self, imdb):
+        self.__imdb = imdb
 
     @nome.setter
     def nome(self, nome):
