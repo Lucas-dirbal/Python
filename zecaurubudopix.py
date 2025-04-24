@@ -62,6 +62,7 @@ else:
     print("Opção inválida")
     exit()
 # Exibir o resultado
+round(VPL, 2) 
 print("O VPL é: ", VPL)
 
 if VPL > 0:
