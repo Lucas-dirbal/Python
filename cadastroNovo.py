@@ -18,4 +18,4 @@ def listar_usuarios():
 
     print("Lista de usuarios cadastrados:")
     for i, u in enumerate(usuarios):
-        
+        print(f"{i + 1}. {u['nome']} - {u['idade']} - {u['email']}")
